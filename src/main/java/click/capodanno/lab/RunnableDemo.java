@@ -12,7 +12,7 @@ class RunnableDemo implements Runnable {
       System.out.println("Running " +  threadName );
       try {
          for(int i = 4; i > 0; i--) {
-            System.out.println("Thread: " + threadName + ", " + i);
+            System.out.println("\nThread: " + threadName + ", " + i);
             System.out.println("Is Init:" + SingletonInit.getInstance().getAppName());
             SingletonInit.getInstance().setAppName("appName in " + threadName);
             System.out.println("getAppName(): " + SingletonInit.getInstance().getAppName());
